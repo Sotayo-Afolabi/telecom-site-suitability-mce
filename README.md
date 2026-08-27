@@ -1,5 +1,3 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bb055be0-37f4-46f3-8716-2235664b1c85" /># Telecom Tower Site Suitability Analysis (Spatial MCE & AHP)
-
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![GIS Platform](https://img.shields.io/badge/GIS-QGIS%203.28+-green.svg)
 ![Status](https://img.shields.io/badge/Status-Phase%201%20Complete-brightgreen.svg)
