@@ -58,7 +58,6 @@ All datasets were processed at a **30-meter spatial resolution** and reclassifie
 
 
 
-
 ## 🧮 Mathematical Framework (AHP & Consistency Check)
 
 Criteria priority weights were calculated using Saaty’s pairwise evaluation scale:
@@ -84,6 +83,7 @@ Criteria priority weights were calculated using Saaty’s pairwise evaluation sc
 * **Principal Eigenvalue ($\lambda_{\max}$):** `5.060`
 * **Consistency Index (CI):** `0.015`
 * **Consistency Ratio (CR):** **`1.3%`** *(Passed: $\text{CR} \le 10\%$ confirms model validity)*
+
 
 
 
