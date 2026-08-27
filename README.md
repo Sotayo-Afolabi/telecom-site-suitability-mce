@@ -1,4 +1,4 @@
-# Telecom Tower Site Suitability Analysis (Spatial MCE & AHP)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bb055be0-37f4-46f3-8716-2235664b1c85" /># Telecom Tower Site Suitability Analysis (Spatial MCE & AHP)
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![GIS Platform](https://img.shields.io/badge/GIS-QGIS%203.28+-green.svg)
@@ -94,29 +94,45 @@ Criteria priority weights were calculated using Saaty’s pairwise evaluation sc
 ### Reclassified Input Criteria
 *(Standardized 1–5 suitability maps for all five spatial variables)*
 
-![Input Rasters Grid](maps/input_rasters_grid.png)
+* **Telecom Dead Zones:** `maps/OGUN STATE TELECOME DEADZONES.png`
+* **Road Proximity:** `maps/Ogun state Road network reclassified.png`
+* **Elevation:** `maps/Ogun state ELEVATION RECLASSIFIED.png`
+* **Slope:** `maps/Ogun state slope reclassification.png`
+* **Water Distance:** `maps/Ogun state RIVER DISTANCE CLASSIFICATION.png`
+* **Dead Zone Land Use:** `maps/Ogun state land use telecom deadzone calssification.png`
+
+*(Composite thumbnail grid `input_rasters_grid.png` coming soon)*
 
 ### Final Composite Suitability Model
 The weighted linear combination was executed via QGIS Raster Calculator:
 
 $$\text{Suitability} = (R_{\text{deadzone}} \times 0.42) + (R_{\text{road}} \times 0.26) + (R_{\text{elevation}} \times 0.16) + (R_{\text{slope}} \times 0.08) + (R_{\text{water}} \times 0.08)$$
 
-![Ogun State Final Suitability Map](maps/ogun_telecom_suitability_final.png)
+![Ogun State Final Suitability Map](<maps/Ogun state Telecom Suitability Map.png>)
+
 
 ---
 
+
+```text
 ## 📁 Repository Structure
 
 ```text
 telecom-site-suitability-mce/
-├── README.md                 <-- Main Project Overview & Analytical Report
+├── README.md                                       <-- Main Project Overview & Report
 ├── docs/
-│   └── Telecom_Suitability_CaseStudy_Sotayo.pdf  <-- Downloadable Executive PDF
+│   └── Telecom_Suitability_CaseStudy_Sotayo.pdf        <-- Downloadable Executive PDF
 ├── maps/
-│   ├── ogun_telecom_suitability_final.png       <-- High-res final suitability map
-│   └── input_rasters_grid.png                    <-- Composite grid of 5 input layers
+│   ├── Ogun state Telecom Suitability Map.png       <-- Final composite suitability map
+│   ├── OGUN STATE TELECOME DEADZONES.png            <-- Reclassified deadzone layer
+│   ├── Ogun state Road network reclassified.png     <-- Reclassified road proximity
+│   ├── Ogun state ELEVATION RECLASSIFIED.png        <-- Reclassified elevation layer
+│   ├── Ogun state slope reclassification.png        <-- Reclassified slope layer
+│   ├── Ogun state RIVER DISTANCE CLASSIFICATION.png <-- Reclassified river buffer
+│   └── Ogun state land use telecom deadzone...png   <-- Land use overlay classification
 └── data/
-    └── README.md             <-- Metadata specs, CRS info, and spatial data sources
+    └── README.md                                   <-- Metadata specs, CRS info, sources
+
 ```
 
 ## 🚀 Project Roadmap & Automation Plan
