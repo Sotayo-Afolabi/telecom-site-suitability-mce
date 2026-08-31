@@ -73,14 +73,14 @@ Criteria priority weights were calculated using Saaty’s pairwise evaluation sc
 | **Water Distance** | 0.20 | 0.33 | 0.33 | 1.00 | 1.00 |
 
 ### 2. Derived Criteria Weights
-* **Telecom Dead Zones:** `42.0%` (`0.42`)
-* **Road Proximity:** `26.0%` (`0.26`)
-* **Elevation:** `16.0%` (`0.16`)
+* **Telecom Dead Zones:** `47.0%` (`0.47`)
+* **Road Proximity:** `22.7%` (`0.23`)
+* **Elevation:** `14.0%` (`0.14`)
 * **Slope:** `8.0%` (`0.08`)
 * **Water Distance:** `8.0%` (`0.08`)
 
 ### 3. Model Consistency Validation
-* **Principal Eigenvalue ($\lambda_{\max}$):** `5.060`
+* **Principal Eigenvalue ($\lambda_{\max}$):** `5.057`
 * **Consistency Index (CI):** `0.015`
 * **Consistency Ratio (CR):** **`1.3%`** *(Passed: $\text{CR} \le 10\%$ confirms model validity)*
 
