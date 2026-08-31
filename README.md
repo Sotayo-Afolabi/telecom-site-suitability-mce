@@ -4,6 +4,8 @@
 
 A spatial Multi-Criteria Decision Analysis (MCDA) framework designed to identify optimal candidate sites for 4G/5G telecommunications infrastructure across **Ogun State, Nigeria**. 
 
+> 📖 Read the full technical write-up on Medium: [Building a Spatial MCE Model for Telecom Towers](https://medium.com/@sotayo32/building-a-telecom-site-suitability-model-with-spatial-mce-ahp-b23a0e5a4702)
+
 This project balances network growth goals against terrain topography and site access by combining vector spatial analysis, Analytic Hierarchy Process (AHP) weighting, and weighted raster overlays.
 
 ---
