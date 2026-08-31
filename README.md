@@ -104,7 +104,7 @@ Criteria priority weights were calculated using Saaty’s pairwise evaluation sc
 ### Final Composite Suitability Model
 The weighted linear combination was executed via QGIS Raster Calculator:
 
-$$\text{Suitability} = (R_{\text{deadzone}} \times 0.42) + (R_{\text{road}} \times 0.26) + (R_{\text{elevation}} \times 0.16) + (R_{\text{slope}} \times 0.08) + (R_{\text{water}} \times 0.08)$$
+$$\text{Suitability} = (R_{\text{deadzone}} \times 0.47) + (R_{\text{road}} \times 0.23) + (R_{\text{elevation}} \times 0.14) + (R_{\text{slope}} \times 0.08) + (R_{\text{water}} \times 0.08)$$
 
 ![Ogun State Final Suitability Map](<maps/Ogun state Telecom Suitability Map.png>)
 
