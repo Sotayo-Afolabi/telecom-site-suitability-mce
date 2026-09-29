@@ -138,7 +138,36 @@ telecom-site-suitability-mce/
 ## 🚀 Project Roadmap & Automation Plan
 
 - [x] **Phase 1 (GIS GUI):** Vector gap extraction, AHP matrix derivation ($\text{CR} = 1.3\%$), QGIS WLC overlay calculation, and executive PDF case study layout.
-- [ ] **Phase 2 (Python Automation):** Refactoring the manual overlay into an automated Python pipeline using `Rasterio`, `GeoPandas`, and `NumPy` for batch execution.
+- [x] **Phase 2 (Python Automation):** Refactoring the manual overlay into an automated Python pipeline using `Rasterio`, `GeoPandas`, and `NumPy` for batch execution.
+
+---
+
+
+## 💻 Phase 2: Automated Python & PostGIS Pipeline
+
+To move beyond manual desktop GIS workflows, the model was refactored into a reproducible, modular code architecture. This pipeline handles automated database ingestion, vector cleaning, proximity transforms, and weighted raster overlays programmatically.
+
+### ⚙️ Pipeline Architecture & Tech Stack
+* **PostGIS / GeoPandas:** Handles vector-side ETL, spatial clipping, re-projection, and deadzone polygon extraction.
+* **SciPy (`ndimage.distance_transform_edt`):** Computes precise Euclidean Distance Transforms (EDT) for continuous proximity variables like roads and water networks.
+* **Rasterio / NumPy:** Manages raster burning, grid dimension alignment, 1–5 scale reclassification, and Weighted Linear Combination (WLC) matrix math.
+
+### 📂 Updated Repository Structure
+The repository has been structured for modular execution and reproducibility:
+
+```text
+telecom-site-suitability-mce/
+├── README.md                                       <-- Main Project Overview & Report
+├── docs/
+│   └── Telecom_Suitability_CaseStudy_Sotayo.pdf        <-- Downloadable Executive PDF
+├── etl/                                            <-- Automated database connection & vector prep
+│   └── vector_prep.py
+├── notebooks/                                      <-- Python WLC, SciPy Distance Transform, & Modeling
+│   └── telecom_mcda.ipynb
+├── maps/
+│   └── ... (All cartographic exports and final suitability map)
+└── data/
+    └── README.md                                   <-- Metadata specs, CRS info, sources
 
 ---
 
